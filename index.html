@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+  $( function() {
+	
+	var snd = new Audio("q1.mp3");
+  
+    $("img").on("click", function(){
+		var img = $(this);
+		var ref = img.attr("src");
+		var altref = img.attr("altsrc");
+		
+		if(altref !== undefined && altref !== ""){
+			img.attr("src", altref);
+			img.attr("altsrc", "");
+		}else{		
+			img.attr("src", "");
+			img.attr("altsrc", ref);
+			snd.play();
+		}
+	});
+  });
+  </script>
+  <style>
+.rhomb {
+    margin: auto;
+    max-width: 1366px;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-gap: 1vmin;
+}
+.rhomb a {
+    grid-column: span 2;
+    z-index: 1;
+    position: relative;  
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);    
+    margin-bottom: -52%;
+    transform: scale(1);
+    transition: all .25s;
+	font-size: 15px;
+	text-align:center;
+}
+.rhomb a:nth-child(23n + 1) {
+    grid-column: 2 / span 2;
+}
+.rhomb a:hover {
+    z-index: 2;
+    transform: scale(1.2);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+}
+.rhomb img {
+    max-width:100%;
+	min-width:106px;
+	min-height:107px;
+}
+.rhomb a h3{
+	position: absolute;
+    bottom: 4%;
+    left: 33%;
+    font-size: 23px;	
+	color: #5bf518;
+}
+body{
+	background-color:black;
+}
+</style>
+</head>
+<body>
+
+<div class="rhomb">
+        <a href="#big-image"><img src="001.jpg" alt=""/><h3>001</h3></a>
+    <a href="#big-image"><img src="002.jpg" alt=""/><h3>002</h3></a>
+    <a href="#big-image"><img src="003.jpg" alt=""/><h3>003</h3></a>
+    <a href="#big-image"><img src="004.jpg" alt=""/><h3>004</h3></a>
+    <a href="#big-image"><img src="005.jpg" alt=""/><h3>005</h3></a>
+    <a href="#big-image"><img src="006.jpg" alt=""/><h3>006</h3></a>
+    <a href="#big-image"><img src="007.jpg" alt=""/><h3>007</h3></a>
+    <a href="#big-image"><img src="008.jpg" alt=""/><h3>008</h3></a>
+    <a href="#big-image"><img src="009.jpg" alt=""/><h3>009</h3></a>
+    <a href="#big-image"><img src="010.jpg" alt=""/><h3>010</h3></a>
+    <a href="#big-image"><img src="011.jpg" alt=""/><h3>011</h3></a>
+    <a href="#big-image"><img src="012.jpg" alt=""/><h3>012</h3></a>
+    <a href="#big-image"><img src="013.jpg" alt=""/><h3>013</h3></a>
+    <a href="#big-image"><img src="014.jpg" alt=""/><h3>014</h3></a>
+    <a href="#big-image"><img src="015.jpg" alt=""/><h3>015</h3></a>
+    <a href="#big-image"><img src="016.jpg" alt=""/><h3>016</h3></a>
+    <a href="#big-image"><img src="017.jpg" alt=""/><h3>017</h3></a>
+    <a href="#big-image"><img src="018.jpg" alt=""/><h3>018</h3></a>
+    <a href="#big-image"><img src="019.jpg" alt=""/><h3>019</h3></a>
+    <a href="#big-image"><img src="020.jpg" alt=""/><h3>020</h3></a>
+    <a href="#big-image"><img src="021.jpg" alt=""/><h3>021</h3></a>
+    <a href="#big-image"><img src="022.jpg" alt=""/><h3>022</h3></a>
+    <a href="#big-image"><img src="023.jpg" alt=""/><h3>023</h3></a>
+    <a href="#big-image"><img src="024.jpg" alt=""/><h3>024</h3></a>
+    <a href="#big-image"><img src="025.jpg" alt=""/><h3>025</h3></a>
+    <a href="#big-image"><img src="026.jpg" alt=""/><h3>026</h3></a>
+    <a href="#big-image"><img src="027.jpg" alt=""/><h3>027</h3></a>
+    <a href="#big-image"><img src="028.jpg" alt=""/><h3>028</h3></a>
+    <a href="#big-image"><img src="029.jpg" alt=""/><h3>029</h3></a>
+    <a href="#big-image"><img src="030.jpg" alt=""/><h3>030</h3></a>
+    <a href="#big-image"><img src="031.jpg" alt=""/><h3>031</h3></a>
+    <a href="#big-image"><img src="032.jpg" alt=""/><h3>032</h3></a>
+    <a href="#big-image"><img src="033.jpg" alt=""/><h3>033</h3></a>
+    <a href="#big-image"><img src="034.jpg" alt=""/><h3>034</h3></a>
+    <a href="#big-image"><img src="035.jpg" alt=""/><h3>035</h3></a>
+    <a href="#big-image"><img src="036.jpg" alt=""/><h3>036</h3></a>
+    <a href="#big-image"><img src="037.jpg" alt=""/><h3>037</h3></a>
+    <a href="#big-image"><img src="038.jpg" alt=""/><h3>038</h3></a>
+    <a href="#big-image"><img src="039.jpg" alt=""/><h3>039</h3></a>
+    <a href="#big-image"><img src="040.jpg" alt=""/><h3>040</h3></a>
+    <a href="#big-image"><img src="041.jpg" alt=""/><h3>041</h3></a>
+    <a href="#big-image"><img src="042.jpg" alt=""/><h3>042</h3></a>
+    <a href="#big-image"><img src="043.jpg" alt=""/><h3>043</h3></a>
+    <a href="#big-image"><img src="044.jpg" alt=""/><h3>044</h3></a>
+    <a href="#big-image"><img src="045.jpg" alt=""/><h3>045</h3></a>
+    <a href="#big-image"><img src="046.jpg" alt=""/><h3>046</h3></a>
+    <a href="#big-image"><img src="047.jpg" alt=""/><h3>047</h3></a>
+    <a href="#big-image"><img src="048.jpg" alt=""/><h3>048</h3></a>
+    <a href="#big-image"><img src="049.jpg" alt=""/><h3>049</h3></a>
+    <a href="#big-image"><img src="050.jpg" alt=""/><h3>050</h3></a>
+    <a href="#big-image"><img src="051.jpg" alt=""/><h3>051</h3></a>
+    <a href="#big-image"><img src="052.jpg" alt=""/><h3>052</h3></a>
+    <a href="#big-image"><img src="053.jpg" alt=""/><h3>053</h3></a>
+    <a href="#big-image"><img src="054.jpg" alt=""/><h3>054</h3></a>
+    <a href="#big-image"><img src="055.jpg" alt=""/><h3>055</h3></a>
+    <a href="#big-image"><img src="056.jpg" alt=""/><h3>056</h3></a>
+    <a href="#big-image"><img src="057.jpg" alt=""/><h3>057</h3></a>
+    <a href="#big-image"><img src="058.jpg" alt=""/><h3>058</h3></a>
+    <a href="#big-image"><img src="059.jpg" alt=""/><h3>059</h3></a>
+    <a href="#big-image"><img src="060.jpg" alt=""/><h3>060</h3></a>
+    <a href="#big-image"><img src="061.jpg" alt=""/><h3>061</h3></a>
+    <a href="#big-image"><img src="062.jpg" alt=""/><h3>062</h3></a>
+    <a href="#big-image"><img src="063.jpg" alt=""/><h3>063</h3></a>
+    <a href="#big-image"><img src="064.jpg" alt=""/><h3>064</h3></a>
+    <a href="#big-image"><img src="065.jpg" alt=""/><h3>065</h3></a>
+    <a href="#big-image"><img src="066.jpg" alt=""/><h3>066</h3></a>
+    <a href="#big-image"><img src="067.jpg" alt=""/><h3>067</h3></a>
+    <a href="#big-image"><img src="068.jpg" alt=""/><h3>068</h3></a>
+    <a href="#big-image"><img src="069.jpg" alt=""/><h3>069</h3></a>
+    <a href="#big-image"><img src="070.jpg" alt=""/><h3>070</h3></a>
+    <a href="#big-image"><img src="071.jpg" alt=""/><h3>071</h3></a>
+    <a href="#big-image"><img src="072.jpg" alt=""/><h3>072</h3></a>
+    <a href="#big-image"><img src="073.jpg" alt=""/><h3>073</h3></a>
+    <a href="#big-image"><img src="074.jpg" alt=""/><h3>074</h3></a>
+    <a href="#big-image"><img src="075.jpg" alt=""/><h3>075</h3></a>
+    <a href="#big-image"><img src="076.jpg" alt=""/><h3>076</h3></a>
+    <a href="#big-image"><img src="077.jpg" alt=""/><h3>077</h3></a>
+    <a href="#big-image"><img src="078.jpg" alt=""/><h3>078</h3></a>
+    <a href="#big-image"><img src="079.jpg" alt=""/><h3>079</h3></a>
+    <a href="#big-image"><img src="080.jpg" alt=""/><h3>080</h3></a>
+    <a href="#big-image"><img src="081.jpg" alt=""/><h3>081</h3></a>
+    <a href="#big-image"><img src="082.jpg" alt=""/><h3>082</h3></a>
+    <a href="#big-image"><img src="083.jpg" alt=""/><h3>083</h3></a>
+    <a href="#big-image"><img src="084.jpg" alt=""/><h3>084</h3></a>
+    <a href="#big-image"><img src="085.jpg" alt=""/><h3>085</h3></a>
+    <a href="#big-image"><img src="086.jpg" alt=""/><h3>086</h3></a>
+    <a href="#big-image"><img src="087.jpg" alt=""/><h3>087</h3></a>
+    <a href="#big-image"><img src="088.jpg" alt=""/><h3>088</h3></a>
+    <a href="#big-image"><img src="089.jpg" alt=""/><h3>089</h3></a>
+    <a href="#big-image"><img src="090.jpg" alt=""/><h3>090</h3></a>
+    <a href="#big-image"><img src="091.jpg" alt=""/><h3>091</h3></a>
+    <a href="#big-image"><img src="092.jpg" alt=""/><h3>092</h3></a>
+    <a href="#big-image"><img src="093.jpg" alt=""/><h3>093</h3></a>
+    <a href="#big-image"><img src="094.jpg" alt=""/><h3>094</h3></a>
+    <a href="#big-image"><img src="095.jpg" alt=""/><h3>095</h3></a>
+    <a href="#big-image"><img src="096.jpg" alt=""/><h3>096</h3></a>
+    <a href="#big-image"><img src="097.jpg" alt=""/><h3>097</h3></a>
+    <a href="#big-image"><img src="098.jpg" alt=""/><h3>098</h3></a>
+    <a href="#big-image"><img src="099.jpg" alt=""/><h3>099</h3></a>
+    <a href="#big-image"><img src="100.jpg" alt=""/><h3>100</h3></a>
+    <a href="#big-image"><img src="101.jpg" alt=""/><h3>101</h3></a>
+    <a href="#big-image"><img src="102.jpg" alt=""/><h3>102</h3></a>
+    <a href="#big-image"><img src="103.jpg" alt=""/><h3>103</h3></a>
+    <a href="#big-image"><img src="104.jpg" alt=""/><h3>104</h3></a>
+    <a href="#big-image"><img src="105.jpg" alt=""/><h3>105</h3></a>
+    <a href="#big-image"><img src="106.jpg" alt=""/><h3>106</h3></a>
+    <a href="#big-image"><img src="107.jpg" alt=""/><h3>107</h3></a>
+    <a href="#big-image"><img src="108.jpg" alt=""/><h3>108</h3></a>
+    <a href="#big-image"><img src="109.jpg" alt=""/><h3>109</h3></a>
+    <a href="#big-image"><img src="110.jpg" alt=""/><h3>110</h3></a>
+    <a href="#big-image"><img src="111.jpg" alt=""/><h3>111</h3></a>
+    <a href="#big-image"><img src="112.jpg" alt=""/><h3>112</h3></a>
+    <a href="#big-image"><img src="113.jpg" alt=""/><h3>113</h3></a>
+    <a href="#big-image"><img src="114.jpg" alt=""/><h3>114</h3></a>
+    <a href="#big-image"><img src="115.jpg" alt=""/><h3>115</h3></a>
+    <a href="#big-image"><img src="116.jpg" alt=""/><h3>116</h3></a>
+    <a href="#big-image"><img src="117.jpg" alt=""/><h3>117</h3></a>
+    <a href="#big-image"><img src="118.jpg" alt=""/><h3>118</h3></a>
+    <a href="#big-image"><img src="119.jpg" alt=""/><h3>119</h3></a>
+    <a href="#big-image"><img src="120.jpg" alt=""/><h3>120</h3></a>
+    <a href="#big-image"><img src="121.jpg" alt=""/><h3>121</h3></a>
+    <a href="#big-image"><img src="122.jpg" alt=""/><h3>122</h3></a>
+    <a href="#big-image"><img src="123.jpg" alt=""/><h3>123</h3></a>
+    <a href="#big-image"><img src="124.jpg" alt=""/><h3>124</h3></a>
+    <a href="#big-image"><img src="125.jpg" alt=""/><h3>125</h3></a>
+    <a href="#big-image"><img src="126.jpg" alt=""/><h3>126</h3></a>
+    <a href="#big-image"><img src="127.jpg" alt=""/><h3>127</h3></a>
+    <a href="#big-image"><img src="128.jpg" alt=""/><h3>128</h3></a>
+    <a href="#big-image"><img src="129.jpg" alt=""/><h3>129</h3></a>
+    <a href="#big-image"><img src="130.jpg" alt=""/><h3>130</h3></a>
+    <a href="#big-image"><img src="131.jpg" alt=""/><h3>131</h3></a>
+    <a href="#big-image"><img src="132.jpg" alt=""/><h3>132</h3></a>
+    <a href="#big-image"><img src="133.jpg" alt=""/><h3>133</h3></a>
+    <a href="#big-image"><img src="134.jpg" alt=""/><h3>134</h3></a>
+    <a href="#big-image"><img src="135.jpg" alt=""/><h3>135</h3></a>
+    <a href="#big-image"><img src="136.jpg" alt=""/><h3>136</h3></a>
+    <a href="#big-image"><img src="137.jpg" alt=""/><h3>137</h3></a>
+    <a href="#big-image"><img src="138.jpg" alt=""/><h3>138</h3></a>
+    <a href="#big-image"><img src="139.jpg" alt=""/><h3>139</h3></a>
+    <a href="#big-image"><img src="140.jpg" alt=""/><h3>140</h3></a>
+    <a href="#big-image"><img src="141.jpg" alt=""/><h3>141</h3></a>
+    <a href="#big-image"><img src="142.jpg" alt=""/><h3>142</h3></a>
+    <a href="#big-image"><img src="143.jpg" alt=""/><h3>143</h3></a>
+    <a href="#big-image"><img src="144.jpg" alt=""/><h3>144</h3></a>
+    <a href="#big-image"><img src="145.jpg" alt=""/><h3>145</h3></a>
+    <a href="#big-image"><img src="146.jpg" alt=""/><h3>146</h3></a>
+    <a href="#big-image"><img src="147.jpg" alt=""/><h3>147</h3></a>
+    <a href="#big-image"><img src="148.jpg" alt=""/><h3>148</h3></a>
+    <a href="#big-image"><img src="149.jpg" alt=""/><h3>149</h3></a>
+    <a href="#big-image"><img src="150.jpg" alt=""/><h3>150</h3></a>
+    <a href="#big-image"><img src="151.jpg" alt=""/><h3>151</h3></a>
+    <a href="#big-image"><img src="152.jpg" alt=""/><h3>152</h3></a>
+    <a href="#big-image"><img src="153.jpg" alt=""/><h3>153</h3></a>
+    <a href="#big-image"><img src="154.jpg" alt=""/><h3>154</h3></a>
+    <a href="#big-image"><img src="155.jpg" alt=""/><h3>155</h3></a>
+    <a href="#big-image"><img src="156.jpg" alt=""/><h3>156</h3></a>
+    <a href="#big-image"><img src="157.jpg" alt=""/><h3>157</h3></a>
+    <a href=""><img src="158.jpg" alt=""/><h3>158</h3></a>
+    <a href="#big-image"><img src="159.jpg" alt=""/><h3>159</h3></a>
+    <a href="#big-image"><img src="160.jpg" alt=""/><h3>160</h3></a>
+
+</div>
+</body>
+</html>
